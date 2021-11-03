@@ -1,4 +1,37 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+}
 body {
-  background-color: rgb(182, 181, 153);
-  color: rgb(115, 178, 233);
+  background-color: #f8f8f8;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+.logo {
+  color: var(--title-text-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* Features */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+.feature-list .link {
+  color: var(--accent-color);
 }
